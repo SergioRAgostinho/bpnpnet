@@ -25,11 +25,11 @@ import torch.optim
 import torch.utils.data
 import torch.utils.tensorboard as tb
 
-from model.model import DBPnP
+from bpnpnet.model.model import DBPnP
 # from model.model_hungarian import DBPnP # At test time only
-from lib.losses import *
-import utilities.geometry_utilities as geo
-from utilities.dataset_utilities import Dataset
+from bpnpnet.lib.losses import *
+from bpnpnet.utilities import geometry_utilities as geo
+from bpnpnet.utilities.dataset_utilities import Dataset
 
 # torch.manual_seed(2809)
 

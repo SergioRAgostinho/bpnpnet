@@ -17,7 +17,7 @@
 
 import torch
 from torch.autograd import grad
-import utilities.geometry_utilities as geo
+from ..utilities import geometry_utilities as geo
 
 def weightedAngularReprojectionError(W, p2d, p3d, theta):
     """ Weighted angular reprojection error

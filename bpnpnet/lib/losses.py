@@ -1,6 +1,6 @@
 import torch
 import math
-import utilities.geometry_utilities as geo
+from ..utilities import geometry_utilities as geo
 
 # Utility functions:
 

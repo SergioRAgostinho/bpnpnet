@@ -7,9 +7,9 @@ import cv2
 import numpy as np
 from .yi2018cvpr.model import Net as FeatureExtractor
 from .yi2018cvpr.config import get_config, print_usage
-from lib.optimal_transport import RegularisedTransport
-from lib.nonlinear_weighted_blind_pnp import NonlinearWeightedBlindPnP
-from utilities.hungarian_algorithm import hungarian_ransac
+from ..lib.optimal_transport import RegularisedTransport
+from ..lib.nonlinear_weighted_blind_pnp import NonlinearWeightedBlindPnP
+from ..utilities.hungarian_algorithm import hungarian_ransac
 
 def pairwiseL2Dist(x1, x2):
     """ Computes the pairwise L2 distance between batches of feature vector sets
